@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff; /* White text for better contrast */
-    overflow: hidden; /* Prevents scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .background {
@@ -16,7 +16,7 @@ body {
     z-index: -1; /* Places background behind content */
     background: url('https://images.unsplash.com/photo-1533126171592-d2f96f6f1f4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed; /* Background image */
     background-size: cover;
-    filter: blur(8px); /* Blurs the background image */
+    filter: blur(5px); /* Slightly less blur for better visibility */
 }
 
 h1 {
@@ -26,6 +26,7 @@ h1 {
     text-align: center;
     margin: 0;
     font-size: 2.5rem;
+    padding: 1rem 0; /* Added padding for better spacing */
 }
 
 h2 {
@@ -33,6 +34,7 @@ h2 {
     font-weight: 600;
     color: #1AC5B0; /* Neon teal color */
     font-size: 1.5rem; /* Smaller font size for headings */
+    margin-top: 0; /* Remove top margin */
 }
 
 p, ul {
@@ -56,69 +58,9 @@ a:hover {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto; /* Center the container */
+    padding-bottom: 3rem; /* Add padding at the bottom to avoid footer overlap */
 }
 
 /* Header */
 header {
-    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark header */
-    padding: 1.5em 0;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places header above background */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-/* Sections */
-.section {
-    padding: 2em 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for sections */
-    margin: 2em 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places sections above background */
-}
-
-.section p, .section ul {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Footer */
-footer {
-    background-color: rgba(34, 34, 34, 0.9); /* Dark footer */
-    color: #ffffff;
-    padding: 1.5em 0;
-    text-align: center;
-    font-size: 0.9rem;
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places footer above background */
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Add minimal animations for interactivity */
-a:hover, button:hover {
-    transition: all 0.2s ease-in-out;
-}
+    background-color: rgba(34, 34
