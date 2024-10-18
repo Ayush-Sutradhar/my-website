@@ -6,12 +6,13 @@ body {
     color: #ffffff; /* White text for better contrast */
     background: url('https://images.unsplash.com/photo-1533126171592-d2f96f6f1f4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed; /* Background image */
     background-size: cover;
+    filter: blur(5px); /* Blurs the background image */
 }
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #00ffcc; /* Neon teal color */
+    color: #ffcc00; /* Neon yellow color */
 }
 
 p, ul {
@@ -22,19 +23,18 @@ p, ul {
 
 a {
     text-decoration: none;
-    color: #ff0099; /* Neon pink color */
+    color: #ff6600; /* Neon orange color */
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #00ffcc; /* Neon teal on hover */
-    border-bottom: 1px solid #00ffcc; /* Underline on hover */
+    color: #ffcc00; /* Neon yellow on hover */
+    border-bottom: 1px solid #ffcc00; /* Underline on hover */
 }
 
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
 /* Header */
@@ -81,7 +81,7 @@ nav ul li a {
 .section h2 {
     text-align: center;
     font-size: 2rem;
-    color: #00ffcc; /* Neon teal for section titles */
+    color: #ffcc00; /* Neon yellow for section titles */
 }
 
 .section p, .section ul {
