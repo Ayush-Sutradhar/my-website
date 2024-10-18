@@ -3,30 +3,32 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Sleek background */
+    color: #ffffff; /* White text for better contrast */
+    background: url('https://images.unsplash.com/photo-1533126171592-d2f96f6f1f4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed; /* Background image */
+    background-size: cover;
 }
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #333;
+    color: #00ffcc; /* Neon teal color */
 }
 
 p, ul {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: #e0e0e0; /* Light gray for readability */
 }
 
 a {
     text-decoration: none;
-    color: #0066cc;
+    color: #ff0099; /* Neon pink color */
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #003366;
-    border-bottom: 1px solid #003366;
+    color: #00ffcc; /* Neon teal on hover */
+    border-bottom: 1px solid #00ffcc; /* Underline on hover */
 }
 
 .container {
@@ -37,10 +39,10 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #4a90e2; /* Modern blue color for header */
+    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark header */
     padding: 1.5em 0;
-    color: white;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
@@ -70,16 +72,16 @@ nav ul li a {
 /* Sections */
 .section {
     padding: 4em 0;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for sections */
     margin: 2em 0;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .section h2 {
     text-align: center;
     font-size: 2rem;
-    color: #333;
+    color: #00ffcc; /* Neon teal for section titles */
 }
 
 .section p, .section ul {
@@ -90,8 +92,8 @@ nav ul li a {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: rgba(34, 34, 34, 0.9); /* Dark footer */
+    color: #ffffff;
     padding: 1.5em 0;
     text-align: center;
     font-size: 0.9rem;
