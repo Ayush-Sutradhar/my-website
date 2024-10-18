@@ -4,9 +4,19 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff; /* White text for better contrast */
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places background behind content */
     background: url('https://images.unsplash.com/photo-1533126171592-d2f96f6f1f4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed; /* Background image */
     background-size: cover;
-    filter: blur(5px); /* Blurs the background image */
+    filter: blur(8px); /* Blurs the background image */
 }
 
 h1, h2 {
@@ -43,6 +53,8 @@ header {
     padding: 1.5em 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative; /* Positioning for stacking context */
+    z-index: 1; /* Places header above background */
 }
 
 header h1 {
@@ -76,6 +88,8 @@ nav ul li a {
     margin: 2em 0;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    position: relative; /* Positioning for stacking context */
+    z-index: 1; /* Places sections above background */
 }
 
 .section h2 {
@@ -97,6 +111,8 @@ footer {
     padding: 1.5em 0;
     text-align: center;
     font-size: 0.9rem;
+    position: relative; /* Positioning for stacking context */
+    z-index: 1; /* Places footer above background */
 }
 
 footer p {
