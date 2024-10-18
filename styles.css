@@ -1,125 +1,91 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    color: #ffffff; /* White text for better contrast */
-    overflow: hidden; /* Prevents scrolling */
-}
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Places background behind content */
-    background: url('https://images.unsplash.com/photo-1533126171592-d2f96f6f1f4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed; /* Background image */
+    background-color: #0d0d0d;
+    color: #00ffea;
+    background: url('cyberpunk-bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    filter: blur(8px); /* Blurs the background image */
 }
 
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #ffcc00; /* Neon yellow color */
-}
-
-p, ul {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #e0e0e0; /* Light gray for readability */
-}
-
-a {
-    text-decoration: none;
-    color: #ff6600; /* Neon orange color */
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #ffcc00; /* Neon yellow on hover */
-    border-bottom: 1px solid #ffcc00; /* Underline on hover */
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-}
-
-/* Header */
 header {
-    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark header */
-    padding: 1.5em 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2em;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places header above background */
+    color: #00ffea;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #ff00ff;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+    animation: glitch 2s infinite;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
+    margin: 1em 0;
+    text-align: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin-right: 15px;
 }
 
 nav ul li a {
+    color: #ff00ff;
+    text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2em;
 }
 
-/* Sections */
+nav ul li a:hover {
+    color: #00ffea;
+    text-shadow: 0 0 5px #00ffea, 0 0 10px #ff00ff;
+}
+
 .section {
-    padding: 4em 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for sections */
-    margin: 2em 0;
+    padding: 2em;
+    margin: 2em auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    border: 2px solid #ff00ff;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places sections above background */
+    box-shadow: 0 0 15px #00ffea, 0 0 30px #ff00ff;
 }
 
 .section h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #ffcc00; /* Neon yellow for section titles */
+    color: #ff00ff;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.section p, .section ul {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Footer */
 footer {
-    background-color: rgba(34, 34, 34, 0.9); /* Dark footer */
-    color: #ffffff;
-    padding: 1.5em 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #00ffea;
     text-align: center;
-    font-size: 0.9rem;
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places footer above background */
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 0 10px #00ffea, 0 0 20px #ff00ff;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* Add minimal animations for interactivity */
-a:hover, button:hover {
-    transition: all 0.2s ease-in-out;
+/* Glitch Animation */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #ff00ff, -2px -2px #00ffea;
+    }
+    50% {
+        text-shadow: -2px -2px #ff00ff, 2px 2px #00ffea;
+    }
+    100% {
+        text-shadow: 2px 2px #ff00ff, -2px -2px #00ffea;
+    }
 }
