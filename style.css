@@ -8,7 +8,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #f1f1f1;
-    background-color: #1e1e1e;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .container {
@@ -62,6 +65,10 @@ section p, section ul {
     font-size: 1.1rem;
 }
 
+section ul {
+    list-style: none;
+}
+
 #home .content {
     text-align: center;
     padding: 100px 20px;
@@ -80,7 +87,7 @@ section p, section ul {
 
 /* Box Styles */
 .box {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
 }
