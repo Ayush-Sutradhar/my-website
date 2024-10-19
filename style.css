@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #f1f1f1;
-    background-image: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&w=1950&q=80');
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1950&q=80'); /* Black-themed background image */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
