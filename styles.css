@@ -1,129 +1,111 @@
 /* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    color: #ffffff; /* White text for better contrast */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
 }
 
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Places background behind content */
-    background: url('https://images.unsplash.com/photo-1533126171592-d2f96f6f1f4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed; /* Background image */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #f1f1f1;
+    background-image: url('background.jpg');
     background-size: cover;
-    filter: blur(8px); /* Slightly less blur for better visibility */
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #FDF500; /* Neon yellow color */
-    text-align: center;
-    margin: 0;
-    font-size: 2.5rem;
-    padding: 1.5rem 0; /* Increased padding for better spacing */
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #1AC5B0; /* Neon teal color */
-    font-size: 1.7rem; /* Slightly larger font size for headings */
-    margin-top: 0;
-    padding-top: 1rem; /* Added padding to the top of each heading */
-    padding-bottom: 0.5rem; /* Space between the heading and content */
-}
-
-p, ul {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #D1C5C0; /* Light gray for readability */
-}
-
-a {
-    text-decoration: none;
-    color: #1AC5B0; /* Neon teal color */
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #FDF500; /* Neon yellow on hover */
-    border-bottom: 1px solid #FDF500; /* Underline on hover */
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .container {
-    width: 80%;
     max-width: 1200px;
-    margin: 0 auto; /* Center the container */
-    padding-bottom: 3rem; /* Add padding at the bottom to avoid footer overlap */
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header */
-header {
-    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark header */
-    padding: 2rem 0; /* Added padding for a better look */
+nav {
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places header above background */
+    margin-top: 20px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-/* Sections */
-.section {
-    padding: 2.5em 1.5em; /* Increased padding for each section */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for sections */
-    margin: 2em 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places sections above background */
-}
-
-.section p, .section ul {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Footer */
-footer {
-    background-color: rgba(34, 34, 34, 0.9); /* Dark footer */
     color: #ffffff;
-    padding: 1.5em 0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f9ca24;
+}
+
+/* Section Styles */
+section {
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f9ca24;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+}
+
+#home .content {
     text-align: center;
-    font-size: 0.9rem;
-    position: relative; /* Positioning for stacking context */
-    z-index: 1; /* Places footer above background */
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+/* Box Styles */
+.box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
 }
 
 footer p {
-    margin: 0;
+    color: #ffffff;
 }
 
-/* Add minimal animations for interactivity */
-a:hover, button:hover {
-    transition: all 0.2s ease-in-out;
+footer a {
+    color: #f9ca24;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
